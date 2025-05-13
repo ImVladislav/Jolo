@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Nanum Brush Script';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/nanumbrushscript/v24/wXK2E2wfpokopxzthSqPbcR5_gVaxazyjg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/silkscreen/v4/m8JXjfVPf62XiF7kO-i9ULQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Silkscreen';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(s/silkscreen/v4/m8JUjfVPf62XiF7kO-i9aAhATms.ttf) format('truetype');
+}
