@@ -219,7 +219,7 @@ function App() {
             <a
                target='_blank'
                rel='noopener noreferrer'
-               href='https://t.me/+kscqVLQZD51mNGZh'
+               href='https://t.me/XXXXXX'
             >
                <img
                   alt='join telegram gif'
