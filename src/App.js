@@ -74,10 +74,10 @@ function App() {
 
          <div className='flex items-center justify-center mt-12'>
             <button
-               onClick={() => (window.location.href = '/game/index.htm')}
+               onClick={() => (window.location.href = '/game/index.html')}
                className='cursor-pointer hover:bg-green-900 px-12 py-2 text-[#fffff] bg-green-800 font-bold gap-2 rounded-3xl font-bounty text-[48px]'
             >
-               Jojorator
+               Jujorator
             </button>
          </div>
 
@@ -299,7 +299,7 @@ function App() {
             </span>
 
             <p className='text-[24px] '>
-               © Copyright 2024 Jujo - All Rights Reserved.
+               © Copyright 2025 Jujo - All Rights Reserved.
             </p>
          </div>
       </div>
