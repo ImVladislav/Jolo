@@ -16,7 +16,7 @@ import r5 from './assets/r5.png';
 import r6 from './assets/r6.png';
 import r7 from './assets/r7.png';
 
-const CONTRACT_ADDRESS = 'DWBxMyVQYVwAtuG1PchCXug2mGVieiChyq1YQLXpump';
+const CONTRACT_ADDRESS = 'XXXXXX';
 
 export function copyToClipboard() {
    var textToCopy = CONTRACT_ADDRESS;
@@ -164,7 +164,7 @@ function App() {
                <button
                   onClick={() =>
                      (window.location.href =
-                        'https://raydium.io/swap/?inputMint=sol&outputMint=DWBxMyVQYVwAtuG1PchCXug2mGVieiChyq1YQLXpump')
+                        'https://raydium.io/swap/?inputMint=sol&outputMint=XXXXXX')
                   }
                   className='cursor-pointer hover:bg-green-900 px-12 py-2 text-[#fffff] bg-green-800 font-bold gap-2 rounded-3xl font-bounty text-[48px]'
                >
@@ -252,7 +252,7 @@ function App() {
                <div className='flex items-center justify-center w-[320px] h-[160px] text-center pl-6'>
                   <a
                      target='_blank'
-                     href='https://dexscreener.com/solana/DWBxMyVQYVwAtuG1PchCXug2mGVieiChyq1YQLXpump'
+                     href='https://dexscreener.com/solana/XXXXXX'
                      rel='noreferrer'
                   >
                      <img src={r6} alt='' />
