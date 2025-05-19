@@ -1,203 +1,250 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JeJe Generator</title>
+    <title>Jujorator</title>
     <link rel="icon" href="vm3dVy0z/favicon-ojuwp5-3.png" type="image/png">
     <link href="css2?family=Nanum+Brush+Script&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MZX7Y7166"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9MZX7Y7166"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-9MZX7Y7166');
-</script>
-<div class="gradient-container"></div>
+        gtag('config', 'G-9MZX7Y7166');
+    </script>
+    <div class="gradient-container"></div>
     <style>
-        
         @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+            0% {
+                background-position: 0% 50%;
+            }
 
-body {
-    font-family: "Silkscreen", sans-serif;
-    background: linear-gradient(-45deg, #3bad40, #67cba0, #3bad40); /* Your gradient colors */
-    background-size: 400% 400%; /* Larger background for animation */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #000000; /* Set the global font color here */
-    opacity: 0; /* Start with opacity 0 */
-    transition: opacity 1.3s ease-in-out; /* Fade in effect */
-    animation: gradient 15s ease infinite; /* Gradient animation */
-}
-.gradient-container {
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-87.3%, -52%); /* Adjust position to be centered */
-    width: 510px; /* Same width as the character display */
-    height: 510px; /* Same height as the character display */
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    border-radius: 8px; /* Border radius */
-    z-index: -1; /* Ensure it's behind other elements */
-    background-size: 300% 300%;
-    animation: animatedgradient 5s ease alternate infinite;
-}
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        body {
+            font-family: "Silkscreen", sans-serif;
+            background: linear-gradient(-45deg, #3bad40, #67cba0, #3bad40);
+            /* Your gradient colors */
+            background-size: 400% 400%;
+            /* Larger background for animation */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #000000;
+            /* Set the global font color here */
+            opacity: 0;
+            /* Start with opacity 0 */
+            transition: opacity 1.3s ease-in-out;
+            /* Fade in effect */
+            animation: gradient 15s ease infinite;
+            /* Gradient animation */
+        }
+
+        .gradient-container {
+            position: absolute;
+            /* Position it absolutely */
+            top: 50%;
+            /* Center vertically */
+            left: 50%;
+            /* Center horizontally */
+            transform: translate(-87.3%, -52%);
+            /* Adjust position to be centered */
+            width: 510px;
+            /* Same width as the character display */
+            height: 510px;
+            /* Same height as the character display */
+            background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+            border-radius: 8px;
+            /* Border radius */
+            z-index: -1;
+            /* Ensure it's behind other elements */
+            background-size: 300% 300%;
+            animation: animatedgradient 5s ease alternate infinite;
+        }
+
+        @keyframes animatedgradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
 
         /* Add fade-in class when the page is loaded */
         .fade-in {
             opacity: 1;
         }
+
         .section {
             padding: 20px;
             display: flex;
         }
+
         .maker {
             border-radius: 8px;
             margin: 10px;
             padding: 10px;
             flex: 1;
         }
+
         .makercontent {
             display: flex;
             flex-direction: column;
         }
+
         .pickers {
             display: flex;
             flex-direction: column;
             flex: 1;
         }
+
         .assetpicker {
-    margin-bottom: 10px;
-    padding: 10px;
-    position: relative;
-    border-radius: 8px;
-    background-color: transparent;
-    width: fit-content;
-    z-index: 2; /* Keep content above the background and gradient */
-    border: 2px solid transparent; /* Space for the gradient border */
-    overflow: visible; /* Allow the gradient to show outside */
-}
+            margin-bottom: 10px;
+            padding: 10px;
+            position: relative;
+            border-radius: 8px;
+            background-color: transparent;
+            width: fit-content;
+            z-index: 2;
+            /* Keep content above the background and gradient */
+            border: 2px solid transparent;
+            /* Space for the gradient border */
+            overflow: visible;
+            /* Allow the gradient to show outside */
+        }
 
-.assetpicker:before {
-    content: '';
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-    border-radius: 10px;
-    z-index: -2; /* Ensure it's behind the grey background and content */
-    background-size: 300% 300%;
-    animation: animatedgradient 5s ease alternate infinite;
-    pointer-events: none;
-}
+        .assetpicker:before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+            border-radius: 10px;
+            z-index: -2;
+            /* Ensure it's behind the grey background and content */
+            background-size: 300% 300%;
+            animation: animatedgradient 5s ease alternate infinite;
+            pointer-events: none;
+        }
 
-.assetpicker:after {
-    content: '';
-    position: absolute;
-    top: 0.05%; /* Shrink the grey background to 85% of the gradient box */
-    left: 0.05%;
-    right: 0.05%;
-    bottom: 0.05%;
-    background-color: rgb(162, 162, 162); /* Grey background */
-    border-radius: 6px; /* Slightly smaller border radius to match the effect */
-    z-index: -1; /* Keep it behind the content but in front of the gradient */
-    pointer-events: none;
-}
+        .assetpicker:after {
+            content: '';
+            position: absolute;
+            top: 0.05%;
+            /* Shrink the grey background to 85% of the gradient box */
+            left: 0.05%;
+            right: 0.05%;
+            bottom: 0.05%;
+            background-color: rgb(162, 162, 162);
+            /* Grey background */
+            border-radius: 6px;
+            /* Slightly smaller border radius to match the effect */
+            z-index: -1;
+            /* Keep it behind the content but in front of the gradient */
+            pointer-events: none;
+        }
 
-@keyframes animatedgradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+        @keyframes animatedgradient {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
 
         .ptext {
             font-size: 16px;
             margin-bottom: 8px;
         }
+
         .pickercomp {
             display: flex;
             align-items: center;
         }
+
         .bcont {
             margin-right: 8px;
             cursor: pointer;
         }
+
         .choices {
             display: flex;
             overflow: hidden;
             flex: 1;
-            width: 220px; /* Width adjusted to show exactly 4 assets */
+            width: 220px;
+            /* Width adjusted to show exactly 4 assets */
         }
+
         .choice {
             margin-right: 8px;
             cursor: pointer;
             flex: 0 0 auto;
         }
+
         .choice img {
             width: 50px;
             height: 50px;
             border: 2px solid transparent;
             border-radius: 4px;
         }
+
         .choiceactive img {
             border-color: #02e027;
         }
+
         .bactive {
             color: #02e027;
         }
+
         .character-display {
             flex: 0 0 200px;
             margin-right: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column; /* Added to align buttons below the preview */
+            flex-direction: column;
+            /* Added to align buttons below the preview */
         }
+
         #character {
             position: relative;
             width: 500px;
             height: 500px;
             background-image: url('xdJf0KFy/green-gradiant-xsh7tw.png');
-        
+
             border-radius: 8px;
             overflow: hidden;
-            margin-bottom: 10px; /* Added margin to separate buttons from the preview */
+            margin-bottom: 10px;
+            /* Added margin to separate buttons from the preview */
         }
 
         #character img {
@@ -208,20 +255,26 @@ body {
             height: 100%;
             object-fit: contain;
         }
+
         #shirt-image {
             z-index: 1;
         }
+
         #main-image {
             z-index: 2;
         }
-        #face-image, #hat-image {
+
+        #face-image,
+        #hat-image {
             z-index: 3;
         }
+
         .arrow {
             cursor: pointer;
             width: 30px;
             height: 30px;
         }
+
         .button-container {
             margin-top: 10px;
         }
@@ -242,6 +295,7 @@ body {
         .button:hover {
             background-color: #029e14;
         }
+
         .link-container {
             position: fixed;
             bottom: 20px;
@@ -256,118 +310,143 @@ body {
             cursor: pointer;
         }
 
-        
-/* Media query for devices with a max width of 768px (typical tablets and phones) */
-@media (max-width: 650px) {
-    body {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-        margin: 0;
-        font-size: 14px;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-        background: linear-gradient(-45deg, #3bad40, #67cba0, #3bad40); /* Define your gradient here */
-        background-size: 400% 400%; /* Larger background for animation */
-        background-position: 0% 50%; /* Ensure the gradient starts at the left for animation */
-        background-attachment: absolute; /* Keep the gradient fixed in place */
-        animation: gradient 15s ease infinite; /* Gradient animation for mobile */
-    }
 
-    .section {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
+        /* Media query for devices with a max width of 768px (typical tablets and phones) */
+        @media (max-width: 650px) {
+            body {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                overflow-x: hidden;
+                /* Prevent horizontal scrolling */
+                background: linear-gradient(-45deg, #3bad40, #67cba0, #3bad40);
+                /* Define your gradient here */
+                background-size: 400% 400%;
+                /* Larger background for animation */
+                background-position: 0% 50%;
+                /* Ensure the gradient starts at the left for animation */
+                background-attachment: absolute;
+                /* Keep the gradient fixed in place */
+                animation: gradient 15s ease infinite;
+                /* Gradient animation for mobile */
+            }
 
-       /* Gradient container */
-       .gradient-container {
-        position: absolute; /* Fixed position to follow scrolling */
-        top: 50%; /* Start at the middle of the viewport */
-        left: 50%; /* Horizontally center */
-        transform: translate(-50%, -84.5%); /* Center both vertically and horizontally */
-        width: calc(380px * 1.1); /* Slightly larger than character display */
-        height: calc(380px * 1.1); /* Slightly larger than character display */
-        display: flex;
-        background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
-        border-radius: 8px; /* Border radius */
-        z-index: -1; /* Ensure it's behind other elements */
-        background-size: 300% 300%;
-        animation: animatedgradient 5s ease alternate infinite;
-    }
+            .section {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
 
-    /* Character display */
-    .character-display {
-        order: 1;
-        margin-right: 0;
-        margin-top: -300px;
-        margin-bottom: 15px; /* Slightly reduce margin-bottom */
-        flex: 0 0 100%;
-        transform: scale(0.8); /* Scale down preview */
-        position: relative; /* Ensure the character display moves independently */
-        z-index: 1; /* Ensure it appears above the gradient */
-    }
+            /* Gradient container */
+            .gradient-container {
+                position: absolute;
+                /* Fixed position to follow scrolling */
+                top: 50%;
+                /* Start at the middle of the viewport */
+                left: 50%;
+                /* Horizontally center */
+                transform: translate(-50%, -84.5%);
+                /* Center both vertically and horizontally */
+                width: calc(380px * 1.1);
+                /* Slightly larger than character display */
+                height: calc(380px * 1.1);
+                /* Slightly larger than character display */
+                display: flex;
+                background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+                border-radius: 8px;
+                /* Border radius */
+                z-index: -1;
+                /* Ensure it's behind other elements */
+                background-size: 300% 300%;
+                animation: animatedgradient 5s ease alternate infinite;
+            }
 
-    .button-container {
-        order: 2;
-        margin-top: 20px; /* Decrease the gap */
-        margin-bottom: -180px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        font-size: 14px;
-    }
+            /* Character display */
+            .character-display {
+                order: 1;
+                margin-right: 0;
+                margin-top: -300px;
+                margin-bottom: 15px;
+                /* Slightly reduce margin-bottom */
+                flex: 0 0 100%;
+                transform: scale(0.8);
+                /* Scale down preview */
+                position: relative;
+                /* Ensure the character display moves independently */
+                z-index: 1;
+                /* Ensure it appears above the gradient */
+            }
 
-    .button {
-        padding: 8px 16px;
-    }
+            .button-container {
+                order: 2;
+                margin-top: 20px;
+                /* Decrease the gap */
+                margin-bottom: -180px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                font-size: 14px;
+            }
 
-    .maker {
-        order: 3;
-        flex: 0 0 100%;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
+            .button {
+                padding: 8px 16px;
+            }
 
-    .link-container {
-        order: 5; /* Move links closer to buttons */
-        position: static;
-        margin-top: 130px; /* Adjust margin */
-        margin-bottom: -350px;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+            .maker {
+                order: 3;
+                flex: 0 0 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
 
-    .link-container a img {
-        width: 25px;
-        height: 25px;
-        transform: scale(1);
-    }
+            .link-container {
+                order: 5;
+                /* Move links closer to buttons */
+                position: static;
+                margin-top: 130px;
+                /* Adjust margin */
+                margin-bottom: -350px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
 
-    .pickers {
-        order: 4; /* Move "choose a" categories closer to buttons */
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        transform: scale(0.8); /* Scale down "choose a" categories */
-        margin-top: -30px; /* Adjust margin to reduce space */
-        margin-bottom: 0; /* Remove extra space below choices */
-    }
+            .link-container a img {
+                width: 25px;
+                height: 25px;
+                transform: scale(1);
+            }
 
-    .assetpicker {
-        width: 80%;
-    }
+            .pickers {
+                order: 4;
+                /* Move "choose a" categories closer to buttons */
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                transform: scale(0.8);
+                /* Scale down "choose a" categories */
+                margin-top: -30px;
+                /* Adjust margin to reduce space */
+                margin-bottom: 0;
+                /* Remove extra space below choices */
+            }
 
-    .choices {
-        width: 500px;
-    }
-}
+            .assetpicker {
+                width: 80%;
+            }
 
+            .choices {
+                width: 500px;
+            }
+        }
     </style>
 
 
 </head>
+
 <body>
     <div class="section">
         <div class="character-display">
@@ -384,7 +463,7 @@ body {
             </div>
         </div>
         <div class="maker two" id="maker">
-            <h1>Jujorator</h1> 
+            <h1>Jujorator</h1>
             <div class="makercontent">
                 <div class="pickers">
                     <!-- Face Picker -->
@@ -395,29 +474,52 @@ body {
                                 <img src="pVY2XVk7/leftarrow.png" class="arrow" alt="Left Arrow">
                             </div>
                             <div class="choices">
-                                <div class="choice" data-target="face-image"><img alt="none" class="asset" src="jdSr77zN/nontest.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="cH53t44Q/dbjlm4tnhse4anjv0rts.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="https://i.postimg.cc/T3XDDsGH/jpone1hjnvfrbvt4h3gp.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="FsSS1vtL/kgug8zhykvxvgfhvezqb.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="grbn3w96/wkbwyofmnndivqjq8hzh.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="VNf07bJq/tdrrjdimak7fjb0yzmsu.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="7hSZM3Z7/thuglife2.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="MKvvLcvV/laugh.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="cHpJn900/kymmrbkwcpmoknbiwutn.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="hvdXJLYB/wbuzsrxg0pa96gmztjqq.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="JhxZm5fY/bfsobuanbwuiw59omf6x.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="N0d9ZfXW/pks8vpkp41jr79vxndes.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="1zswLjjN/egdxvkboj2kv0sol60gy.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="C1tZLPm7/ua8gloz159zvjrgpa2ti.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="QNygHSHR/atamtqafkac76nec6lvm.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="T2FmRwsx/jsvodxniqgmsk5aikj5k.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="x1ybyP1j/sqqltha4wh9vnnilacf9.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="T2pHPtRD/xevd3i8aubtnslq3agiv.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="prwnkGjr/etkhzlogxpmm3ptd2odk.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="85sJGQBs/tml5vr5urqr8jrf9f0hd.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="zvfTB2mP/alien-tiahor.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="https://i.postimg.cc/dtWjxQg7/hockey-face.png"></div>
-                                <div class="choice" data-target="face-image"><img alt="asset" class="asset" src="sxBsThw2/stormtrooper.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="none" class="asset"
+                                        src="jdSr77zN/nontest.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="cH53t44Q/dbjlm4tnhse4anjv0rts.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/T3XDDsGH/jpone1hjnvfrbvt4h3gp.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="FsSS1vtL/kgug8zhykvxvgfhvezqb.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="grbn3w96/wkbwyofmnndivqjq8hzh.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="VNf07bJq/tdrrjdimak7fjb0yzmsu.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="7hSZM3Z7/thuglife2.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="MKvvLcvV/laugh.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="cHpJn900/kymmrbkwcpmoknbiwutn.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="hvdXJLYB/wbuzsrxg0pa96gmztjqq.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="JhxZm5fY/bfsobuanbwuiw59omf6x.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="N0d9ZfXW/pks8vpkp41jr79vxndes.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="1zswLjjN/egdxvkboj2kv0sol60gy.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="C1tZLPm7/ua8gloz159zvjrgpa2ti.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="QNygHSHR/atamtqafkac76nec6lvm.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="T2FmRwsx/jsvodxniqgmsk5aikj5k.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="x1ybyP1j/sqqltha4wh9vnnilacf9.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="T2pHPtRD/xevd3i8aubtnslq3agiv.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="prwnkGjr/etkhzlogxpmm3ptd2odk.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="85sJGQBs/tml5vr5urqr8jrf9f0hd.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="zvfTB2mP/alien-tiahor.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/dtWjxQg7/hockey-face.png"></div>
+                                <div class="choice" data-target="face-image"><img alt="asset" class="asset"
+                                        src="sxBsThw2/stormtrooper.png"></div>
                             </div>
                             <div class="bcont right-arrow">
                                 <img src="pXWP9N6d/rightarrow.png" class="arrow" alt="Right Arrow">
@@ -432,27 +534,48 @@ body {
                                 <img src="pVY2XVk7/leftarrow.png" class="arrow" alt="Left Arrow">
                             </div>
                             <div class="choices">
-                                <div class="choice" data-target="hat-image"><img alt="none" class="asset" src="jdSr77zN/nontest.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="wMCfmRXN/qo3c9hd1kaci7geduv2t.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="3rcPhdvY/hbmstguufr8bvmae1h80.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="https://i.postimg.cc/Rhy8LDBN/fanl4uynktddydbqth5j.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="https://i.postimg.cc/J0GvJWSf/f3njqgxgecd4shaqinhr.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="VNwcyxgx/cash-hat.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="vmvwG0Sc/maga.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="zf8Q7h9S/m2w0sx1dnykwyismlbrv.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="https://i.postimg.cc/PJ16YbNB/fewfwefevavevervev.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="https://i.postimg.cc/vTg2TtVM/vevklumtaali02pxl9ar.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="YC1VQRyC/qi3y7flqdi0v4qsxjrap.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="PxqRsjfC/q2ny4h55nkygt6zpa4hb.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="MZnz1k0Z/whtkja9nvpcig1w8yep5.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="MKRxryrh/wx0tiw1z0xwfvkuggnov.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="tgkMMTb0/qm44ouwq4o8mnh7nupwx.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="cLwqX06Z/a9asb9hlxu91zcbbziyh.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="tTRLq6kC/chptumbaavbwnvoarj9f.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="xjBnRsgv/w0hyc6eqnrt35tadmpf9.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="MKfgpq7R/hp8ry8ct3m6iwjbmxnkd.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="6Q6X3F5X/znx17orz75hck9oye62f.png"></div>
-                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset" src="nrQbrBVL/ushanka.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="none" class="asset"
+                                        src="jdSr77zN/nontest.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="wMCfmRXN/qo3c9hd1kaci7geduv2t.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="3rcPhdvY/hbmstguufr8bvmae1h80.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/Rhy8LDBN/fanl4uynktddydbqth5j.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/J0GvJWSf/f3njqgxgecd4shaqinhr.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="VNwcyxgx/cash-hat.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="vmvwG0Sc/maga.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="zf8Q7h9S/m2w0sx1dnykwyismlbrv.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/PJ16YbNB/fewfwefevavevervev.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/vTg2TtVM/vevklumtaali02pxl9ar.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="YC1VQRyC/qi3y7flqdi0v4qsxjrap.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="PxqRsjfC/q2ny4h55nkygt6zpa4hb.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="MZnz1k0Z/whtkja9nvpcig1w8yep5.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="MKRxryrh/wx0tiw1z0xwfvkuggnov.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="tgkMMTb0/qm44ouwq4o8mnh7nupwx.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="cLwqX06Z/a9asb9hlxu91zcbbziyh.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="tTRLq6kC/chptumbaavbwnvoarj9f.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="xjBnRsgv/w0hyc6eqnrt35tadmpf9.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="MKfgpq7R/hp8ry8ct3m6iwjbmxnkd.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="6Q6X3F5X/znx17orz75hck9oye62f.png"></div>
+                                <div class="choice" data-target="hat-image"><img alt="asset" class="asset"
+                                        src="nrQbrBVL/ushanka.png"></div>
 
                             </div>
                             <div class="bcont right-arrow">
@@ -468,43 +591,80 @@ body {
                                 <img src="pVY2XVk7/leftarrow.png" class="arrow" alt="Left Arrow">
                             </div>
                             <div class="choices">
-                                <div class="choice" data-target="shirt-image"><img alt="none" class="asset" src="jdSr77zN/nontest.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="Xqgz5Yv7/cs5kx8nhfbmdyp6bausj.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="SKW7RtRm/uju0zdoo76dipybljyp5.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="wjMGtHYg/cwyotfmwqqft9hjxqs1r.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="J4PF40gp/b0a57nwmqqzhtvorh880.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="qrpokzkpr2w9dwov1jjt.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="tiedyeupdated.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="WbXDFGWK/updated2.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="L87gYZFk/ifrog3.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="ZKwdmMfM/creamifrog.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="pd8k8LGb/p7m6gt8y1te8asy3uwuf.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="BbNm67hj/d87h10ko1gdba2iu7win.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="6p4hJQN2/tvhoknimutqbzkznn7vs.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="XqNgTcV4/nbyx21wfpeog2eoyikdy.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="czhpswtp34ctxp0z2ctr.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="tJVtpBBG/point.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="W3zwfNr3/based3.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="GhXhbbsr/based2.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="hj7vy6Cx/basedjj.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="26RcXZbS/d0thbzgxw8wr8s3ktwfr.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="J73gvPQV/c2ua1brhvht3qz7znz2g.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="L6H7pLyq/bftgv7if6gxkcjsxgrnw.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="3Nb2VsSF/yus5vyfgelhx8pzvsqti.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="9QDLmpyf/illpmhz7rwzjn1who6ud.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="cLkPTCBv/a1q4rcwkjul28jmfh8tn.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="8zxtj6bm/mblzpcgpkqpcylmwwpaa.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="1ts0qcVw/xxucs0myev2v4myjuxo7.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="vHqPwjgj/gke14jxucdr93chkrkjc.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="Jn5q6dCp/pkxteo5xpnimrtjdfw5q.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="https://i.postimg.cc/h40yphSK/gfvn46xkl2ymne9ihlmc.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="XqKGRGMr/cultthumbsup.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="BbfP75zW/thumbsupjeje.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="tTxVzv2t/CULT.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="ktj.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="4NZhz5tV/time.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="WbnqSk6K/timegrey.png"></div>
-                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset" src="yN5ZcCX8/bongshirt.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="none" class="asset"
+                                        src="jdSr77zN/nontest.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="Xqgz5Yv7/cs5kx8nhfbmdyp6bausj.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="SKW7RtRm/uju0zdoo76dipybljyp5.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="wjMGtHYg/cwyotfmwqqft9hjxqs1r.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="J4PF40gp/b0a57nwmqqzhtvorh880.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="qrpokzkpr2w9dwov1jjt.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="tiedyeupdated.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="WbXDFGWK/updated2.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="L87gYZFk/ifrog3.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="ZKwdmMfM/creamifrog.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="pd8k8LGb/p7m6gt8y1te8asy3uwuf.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="BbNm67hj/d87h10ko1gdba2iu7win.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="6p4hJQN2/tvhoknimutqbzkznn7vs.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="XqNgTcV4/nbyx21wfpeog2eoyikdy.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="czhpswtp34ctxp0z2ctr.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="tJVtpBBG/point.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="W3zwfNr3/based3.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="GhXhbbsr/based2.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="hj7vy6Cx/basedjj.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="26RcXZbS/d0thbzgxw8wr8s3ktwfr.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="J73gvPQV/c2ua1brhvht3qz7znz2g.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="L6H7pLyq/bftgv7if6gxkcjsxgrnw.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="3Nb2VsSF/yus5vyfgelhx8pzvsqti.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="9QDLmpyf/illpmhz7rwzjn1who6ud.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="cLkPTCBv/a1q4rcwkjul28jmfh8tn.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="8zxtj6bm/mblzpcgpkqpcylmwwpaa.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="1ts0qcVw/xxucs0myev2v4myjuxo7.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="vHqPwjgj/gke14jxucdr93chkrkjc.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="Jn5q6dCp/pkxteo5xpnimrtjdfw5q.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="https://i.postimg.cc/h40yphSK/gfvn46xkl2ymne9ihlmc.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="XqKGRGMr/cultthumbsup.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="BbfP75zW/thumbsupjeje.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="tTxVzv2t/CULT.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="ktj.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="4NZhz5tV/time.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="WbnqSk6K/timegrey.png"></div>
+                                <div class="choice" data-target="shirt-image"><img alt="asset" class="asset"
+                                        src="yN5ZcCX8/bongshirt.png"></div>
                             </div>
                             <div class="bcont right-arrow">
                                 <img src="pXWP9N6d/rightarrow.png" class="arrow" alt="Right Arrow">
@@ -515,18 +675,18 @@ body {
             </div>
         </div>
     </div>
-        <!-- Link Container -->
-        <div class="link-container">
-            <a href="https://t.me/XXXXXX" target="_blank">
-                <img src="PqgtNPgG/Telegram-font-awesome-svg-agaz3w.png" alt="Telegram">
-            </a>
-            <a href="https://x.com/XXXXXX" target="_blank">
-                <img src="Rh94Q2CX/X-Logo-hytlqj.png" alt="X">
-            </a>
-            <a href="https://coinmarketcap.com/currencies/XXXXXX/" target="_blank">
-                <img src="3xbr5L9x/coinmarketcap-logo-01-freelogovectors-net-g9jymz.png" alt="CoinMarketCap">
-            </a>
-        </div>
+    <!-- Link Container -->
+    <div class="link-container">
+        <a href="https://t.me/XXXXXX" target="_blank">
+            <img src="PqgtNPgG/Telegram-font-awesome-svg-agaz3w.png" alt="Telegram">
+        </a>
+        <a href="https://x.com/XXXXXX" target="_blank">
+            <img src="Rh94Q2CX/X-Logo-hytlqj.png" alt="X">
+        </a>
+        <a href="https://coinmarketcap.com/currencies/XXXXXX/" target="_blank">
+            <img src="3xbr5L9x/coinmarketcap-logo-01-freelogovectors-net-g9jymz.png" alt="CoinMarketCap">
+        </a>
+    </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const choicesContainers = document.querySelectorAll(".choices");
@@ -534,8 +694,8 @@ body {
             const rightArrows = document.querySelectorAll(".right-arrow");
             const randomizeButton = document.getElementById("randomize");
             const downloadButton = document.getElementById("download");
-                        // Apply fade-in class after everything is loaded
-                        document.body.classList.add('fade-in');
+            // Apply fade-in class after everything is loaded
+            document.body.classList.add('fade-in');
 
             // Handle asset selection
             const choices = document.querySelectorAll(".choice");
@@ -603,74 +763,69 @@ body {
                 });
             });
 
-// Handle download
-downloadButton.addEventListener("click", function () {
-    const character = document.getElementById("character");
+            // Handle download
+            downloadButton.addEventListener("click", function () {
+                const character = document.getElementById("character");
 
-    // Extract background image URL from CSS
-    const backgroundImageUrl = getComputedStyle(character).backgroundImage.replace(/^url\(['"](.+)['"]\)$/, '$1');
+                // Extract background image URL from CSS
+                const backgroundImageUrl = getComputedStyle(character).backgroundImage.replace(/^url\(['"](.+)['"]\)$/, '$1');
 
-    // Create a canvas element
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
+                // Create a canvas element
+                const canvas = document.createElement("canvas");
+                const ctx = canvas.getContext("2d");
 
-    // Set canvas dimensions
-    const scale = 3; // Adjust this value to change the resolution
-    canvas.width = character.clientWidth * scale;
-    canvas.height = character.clientHeight * scale;
-    ctx.scale(scale, scale);
+                // Set canvas dimensions
+                const scale = 3; // Adjust this value to change the resolution
+                canvas.width = character.clientWidth * scale;
+                canvas.height = character.clientHeight * scale;
+                ctx.scale(scale, scale);
 
-    // Load images with proper error handling
-    const images = Array.from(character.querySelectorAll("img"));
+                // Load images with proper error handling
+                const images = Array.from(character.querySelectorAll("img"));
 
-    // Function to load an image
-    const loadImage = (src) => new Promise((resolve, reject) => {
-        const img = new Image();
-        img.crossOrigin = "Anonymous"; // This is crucial for CORS issues
-        img.src = src;
-        img.onload = () => resolve(img);
-        img.onerror = reject;
-    });
+                // Function to load an image
+                const loadImage = (src) => new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.crossOrigin = "Anonymous"; // This is crucial for CORS issues
+                    img.src = src;
+                    img.onload = () => resolve(img);
+                    img.onerror = reject;
+                });
 
-    // Load and draw images
-    Promise.all([loadImage(backgroundImageUrl), ...images.map(img => img.src ? loadImage(img.src) : Promise.resolve(null))])
-        .then(loadedImages => {
-            // Draw the background image first
-            const backgroundImage = loadedImages[0];
-            ctx.drawImage(backgroundImage, 0, 0, canvas.width / scale, canvas.height / scale);
+                // Load and draw images
+                Promise.all([loadImage(backgroundImageUrl), ...images.map(img => img.src ? loadImage(img.src) : Promise.resolve(null))])
+                    .then(loadedImages => {
+                        // Draw the background image first
+                        const backgroundImage = loadedImages[0];
+                        ctx.drawImage(backgroundImage, 0, 0, canvas.width / scale, canvas.height / scale);
 
-            // Draw other images, sorting by z-index
-            const imageElements = images.map((img, index) => ({
-                img: loadedImages[index + 1],
-                zIndex: parseInt(getComputedStyle(img).zIndex, 10) || 0,
-                display: getComputedStyle(img).display
-            }));
+                        // Draw other images, sorting by z-index
+                        const imageElements = images.map((img, index) => ({
+                            img: loadedImages[index + 1],
+                            zIndex: parseInt(getComputedStyle(img).zIndex, 10) || 0,
+                            display: getComputedStyle(img).display
+                        }));
 
-            imageElements.sort((a, b) => a.zIndex - b.zIndex);
+                        imageElements.sort((a, b) => a.zIndex - b.zIndex);
 
-            imageElements.forEach(({ img, display }) => {
-                if (display !== 'none' && img) {
-                    ctx.drawImage(img, 0, 0, canvas.width / scale, canvas.height / scale);
-                }
+                        imageElements.forEach(({ img, display }) => {
+                            if (display !== 'none' && img) {
+                                ctx.drawImage(img, 0, 0, canvas.width / scale, canvas.height / scale);
+                            }
+                        });
+
+                        // Convert canvas to a data URL and trigger download
+                        const dataURL = canvas.toDataURL("image/png");
+                        const link = document.createElement("a");
+                        link.href = dataURL;
+                        link.download = "character.png";
+                        link.click();
+                    })
+                    .catch(error => console.error("Image failed to load:", error));
             });
 
-            // Convert canvas to a data URL and trigger download
-            const dataURL = canvas.toDataURL("image/png");
-            const link = document.createElement("a");
-            link.href = dataURL;
-            link.download = "character.png";
-            link.click();
-        })
-        .catch(error => console.error("Image failed to load:", error));
-    });
-
-});
+        });
     </script>
 </body>
+
 </html>
-
-
-
-
-
-
