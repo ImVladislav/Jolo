@@ -235,7 +235,7 @@ function App() {
           <div className="flex items-center justify-center w-[320px] h-[160px] text-center ml-auto pr-6">
             <a
               target="_blank"
-              href="https://coinmarketcap.com"
+              href="https://coinmarketcap.com/dexscan/ru/solana/DnggcWuuLYFsW7JuuGfm6ehLFNpgGV9GeYGuovKozqb6/"
               rel="noreferrer"
             >
               <img src={r5} alt="" />
