@@ -85,19 +85,45 @@ function App() {
         <div className="relative w-full hidden lg:block">
           <div className="absolute left-0 z-10 flex w-screen overflow-x-hidden text-black top-1 lg:-top-8">
             <Marquee className="mt-11 overflow-hidden">
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
-              <span className="mx-2 text-2xl font-bold lg:text-8xl">$JUJO</span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
+              <span className="mx-2 text-2xl font-bold lg:text-8xl">
+                $JUJO CTO
+              </span>
             </Marquee>
           </div>
           <img
