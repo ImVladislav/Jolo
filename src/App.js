@@ -16,7 +16,7 @@ import r5 from "./assets/r5.png";
 import r6 from "./assets/r6.png";
 import r7 from "./assets/r7.png";
 
-const CONTRACT_ADDRESS = "JujoFun";
+const CONTRACT_ADDRESS = "6QjdY59XFoHZMSHTXRZbAKhwGYbfdcGvn7USX6c8pump";
 
 export function copyToClipboard() {
   var textToCopy = CONTRACT_ADDRESS;
