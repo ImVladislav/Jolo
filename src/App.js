@@ -138,7 +138,7 @@ function App() {
           <button
             onClick={() =>
               (window.location.href =
-                "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=6QjdY59XFoHZMSHTXRZbAKhwGYbfdcGvn7USX6c8pumpb")
+                "https://swap.pump.fun/?input=So11111111111111111111111111111111111111112&output=6QjdY59XFoHZMSHTXRZbAKhwGYbfdcGvn7USX6c8pump")
             }
             className="cursor-pointer hover:bg-green-900 px-12 py-2 text-[#fffff] bg-green-800 font-bold gap-2 rounded-3xl font-bounty text-[48px]"
           >
@@ -217,7 +217,7 @@ function App() {
           <div className="flex items-center justify-center w-[320px] h-[160px] text-center ml-auto pr-6">
             <a
               target="_blank"
-              href="https://www.dextools.io/app/en/solana/pair-explorer/6QjdY59XFoHZMSHTXRZbAKhwGYbfdcGvn7USX6c8pump"
+              href="https://www.dextools.io/app/en/solana/pair-explorer/DnggcWuuLYFsW7JuuGfm6ehLFNpgGV9GeYGuovKozqb6?t=1747670676430"
               rel="noreferrer"
             >
               <img src={r7} alt="" />
@@ -242,7 +242,11 @@ function App() {
             </a>
           </div>
           <div className="flex items-center justify-center w-[280px] h-[140px] text-center pl-6">
-            <a target="_blank" href="https://coingecko.com" rel="noreferrer">
+            <a
+              target="_blank"
+              href="https://www.geckoterminal.com/solana/pools/DnggcWuuLYFsW7JuuGfm6ehLFNpgGV9GeYGuovKozqb6?utm_source=coingecko&utm_medium=referral&utm_campaign=searchresults"
+              rel="noreferrer"
+            >
               <img src={r4} alt="" />
             </a>
           </div>
